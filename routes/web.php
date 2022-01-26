@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\User;
-
+use App\Http\Controllers\form;
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,3 +24,10 @@ Route::get('/user', function () {
     $users  = ['name'=>'kanha','age' => '24' , 'doy' => 1997];
     return view('users', ['users'=>$users]);
 });
+
+Route::view('login', 'form');
+
+Route::post('form', [form::class , 'getData']);
+
+
+// Route::post( '/page-name', [form::class, 'getData']);
