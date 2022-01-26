@@ -29,5 +29,5 @@ Route::view('login', 'form');
 
 Route::post('form', [form::class , 'getData']);
 
-
+Route::view('noaccess', 'noaccess');
 // Route::post( '/page-name', [form::class, 'getData']);
