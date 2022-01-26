@@ -1,1 +1,1 @@
-<h2>This is homepage</h2>
+<h2>This is welcome page</h2>
