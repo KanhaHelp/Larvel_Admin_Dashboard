@@ -8,8 +8,8 @@ class form extends Controller
 {
     function getData(Request $req){
         $req->validate([
-            'name' => 'required | max :10',
-            'age' => 'required | min:5',
+            'name' => 'required | max : 30',
+            'age' => 'required | min:2 | max:2',
         ]);
         return $req->input();
  
